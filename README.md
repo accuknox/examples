@@ -1,7 +1,7 @@
 
 # Prompt Firewall Examples
 
-A small example repository that demonstrates how to combine an LLM client (`litellm`) with a prompt / response scanning middleware (`accknox-llm-defense`) and GitHub MCP tools to safely call models that may use external tools.
+A example repository that demonstrates how to combine an LLM client (`litellm`) with a prompt / response scanning middleware (`accknox-llm-defense`) and GitHub MCP tools to safely call models that may use external tools.
 
 This project includes a minimal runnable script, `github-agent/app.py`, which:
 
@@ -9,16 +9,11 @@ This project includes a minimal runnable script, `github-agent/app.py`, which:
 - Invokes an LLM (via `litellm`) configured to use GitHub MCP tools.
 - Scans the model's response with Accuknox LLM Defense and prints a structured output and usage details.
 
-## What's inside
-
-- `github-agent/app.py` — Example script that ties together prompt sanitization, an LLM call, and response scanning.
-- `README.md` — This documentation.
-
 ## Prerequisites
 
 Before running the example, make sure you have the following installed and configured:
 
-1. Python 3.10+ (tested on macOS with zsh)
+1. Python 3.10+
 2. pip (the Python package installer)
 3. Python packages used by the example:
 
@@ -29,8 +24,8 @@ pip3 install litellm accuknox-llm-defense
 4. Required environment variables (set these in your shell):
 
 ```bash
-export ACCUKNOX_API_KEY="your_accuknox_api_key"
-export ANTHROPY_API_KEY="your_anthropy_api_key"
+export ACCUKNOX_API_KEY="your_accuknox_api_key" # [How to get this API key?](https://help.accuknox.com/use-cases/llm-defense-app-onboard/)
+export ANTHROPY_API_KEY="your_anthropy_api_key" # Needed for litellm.
 ```
 
 Notes:
@@ -71,15 +66,7 @@ The script prints a clear section labeled "RESPONSE DETAILS" followed by the san
 - This example sends prompts and model responses to third-party services (the model provider and Accuknox). Do not use this repository with private or sensitive data unless you understand and accept those risks.
 - Treat API keys like secrets. Use environment variables, secrets managers, or vaults in real deployments.
 
-## Contributing
-
-Small improvements are welcome (clarifying comments, better examples). For anything larger, open an issue or PR and include a brief description of the change.
-
-## License
-
-This repository is provided as-is for educational purposes. No license file is included; add one if you plan to publish.
-
 ## Contact
 
-If you have questions about this example, open an issue in the repo or contact the repository owner.
+If you have questions about this example, open an issue in the repo or contact support@accuknox.com
 
