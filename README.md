@@ -24,12 +24,12 @@ pip3 install litellm accuknox-llm-defense
 4. Required environment variables (set these in your shell):
 
 ```bash
-export ACCUKNOX_API_KEY="your_accuknox_api_key" # [How to get this API key?](https://help.accuknox.com/use-cases/llm-defense-app-onboard/)
+export ACCUKNOX_API_KEY="your_accuknox_api_key" # 
 export ANTHROPY_API_KEY="your_anthropy_api_key" # Needed for litellm.
 ```
 
 Notes:
-- Replace `your_accuknox_api_key` and `your_anthropy_api_key` with real API keys for those services.
+- Replace `your_accuknox_api_key` and `your_anthropy_api_key` with real API keys for those services. [How to get ACCUKNOX_API_KEY?](https://help.accuknox.com/use-cases/llm-defense-app-onboard/)
 - Keep API keys secret — do not commit them to source control.
 
 ## Quick start (run the example)
