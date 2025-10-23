@@ -2,8 +2,8 @@
 # 1. Install litellm: pip3 install litellm
 # 2. Install accuknox-llm-defense: pip3 install accuknox-llm-defense
 # 3. Set the environment variable ACCUKNOX_API_KEY="your_accuknox_api_key"	
-# 4. Set the environment variable ANTHROPY_API_KEY="your_anthropy_api_key"
-# 5. Execute the script: python3 github-aiagent-app.py
+# 4. Set the environment variable ANTHROPIC_API_KEY="your_anthropic_api_key"
+# 5. Execute the script: python3 app.py
 
 import sys
 from litellm import completion
