@@ -1,3 +1,4 @@
+![](./ak-promptfw.png)
 
 # Prompt Firewall Example
 
